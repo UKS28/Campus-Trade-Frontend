@@ -17,7 +17,7 @@ import BookingPage from './pages/BookingPage'
 
 // DEFINING A BASE URL FOR SERVER
 // not use local host in place of 127.0.0.1 as it give error in the set cookie in response header 
-axios.defaults.baseURL='http://127.0.0.1:4000';
+axios.defaults.baseURL='https://campus-trade-server.onrender.com/';
 axios.defaults.withCredentials=true;
 
 function App() {
