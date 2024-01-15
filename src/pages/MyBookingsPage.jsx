@@ -25,7 +25,7 @@ export default function MyBookingsPage() {
                         <h2 className="text-xl ">{booking.item.title}</h2>
                         <div className="border-t border-gray-300 mt-2 py-2">
                           
-                           Booked on :
+                           Booked on : { format(new Date(booking.checkIn),'yyyy-MM-dd')}
                         </div>
                       
                         <div className="text-xl">

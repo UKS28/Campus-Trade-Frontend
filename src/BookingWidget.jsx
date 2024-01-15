@@ -19,7 +19,7 @@ export default function BookingWidget({item}) {
   }, [user]);
 
 
-  console.log(new Date(checkIn),checkIn);
+  //console.log(new Date(checkIn),checkIn);
 
 
   async function bookItem() {
