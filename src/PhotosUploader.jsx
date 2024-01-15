@@ -54,7 +54,7 @@ export default function PhotosUploader({addedPhotos,onChange}){
                       <div className="grid gap-2 grid-cols-3 md:grid-cols-4 lg:grid-cols-6 mt-2 ">
                             {addedPhotos.length>0 && addedPhotos.map(link=>(
                                 <div className="h-32 flex relative" key={link}>
-                                    <img className="rounded-2xl w-full object-cover" src={'http://localhost:4000/uploads/'+link}/>
+                                    <img className="rounded-2xl w-full object-cover" src={'https://campus-trade-server.onrender.com/uploads/'+link}/>
                                    {/* for deleting the photos */}
                                     <button onClick={ev => removePhoto(ev,link)} className="cursor-pointer absolute bottom-1 right-1 text-white bg-black bg-opacity-50 rounded-2xl py-2 px-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
