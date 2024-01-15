@@ -30,7 +30,7 @@ export default function IndexPage(){
           <Link to={'/item/'+item._id} key={item.id}> 
             <div className="bg-gray-500 rounded-2xl flex mb-2">
               {item.photos?.[0]&&(
-              <img className="rounded-2xl object-cover aspect-square" src={'http://localhost:4000/uploads/'+item.photos?.[0]}/>
+              <img className="rounded-2xl object-cover aspect-square" src={'https://campus-trade-server.onrender.com/uploads/'+item.photos?.[0]}/>
               )}
             </div>
             <h2 className="font-bold">{item.title}</h2> 

@@ -20,7 +20,7 @@ export default function ItemGallery({item}) {
           </div>
           {item?.photos?.length > 0 && item.photos.map(photo => (
             <div>
-              <img src={'http://localhost:4000/uploads/'+photo} alt=""/>
+              <img src={'https://campus-trade-server.onrender.com/uploads/'+photo} alt=""/>
             </div>
           ))}
         </div>
@@ -34,17 +34,17 @@ export default function ItemGallery({item}) {
         <div>
           {item.photos?.[0] && (
             <div>
-              <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover" src={'http://localhost:4000/uploads/'+item.photos[0]} alt=""/>
+              <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover" src={'https://campus-trade-server.onrender.com/uploads/'+item.photos[0]} alt=""/>
             </div>
           )}
         </div>
         <div className="grid">
           {item.photos?.[1] && (
-            <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover" src={'http://localhost:4000/uploads/'+item.photos[1]} alt=""/>
+            <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover" src={'https://campus-trade-server.onrender.com/uploads/'+item.photos[1]} alt=""/>
           )}
           <div className="overflow-hidden">
             {item.photos?.[2] && (
-              <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover relative top-2" src={'http://localhost:4000/uploads/'+item.photos[2]} alt=""/>
+              <img onClick={() => setShowAllPhotos(true)} className="aspect-square cursor-pointer object-cover relative top-2" src={'https://campus-trade-server.onrender.com/uploads/'+item.photos[2]} alt=""/>
             )}
           </div>
         </div>

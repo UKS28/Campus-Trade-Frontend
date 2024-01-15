@@ -3,7 +3,7 @@ export default function PlaceImg({item,index=0,className=null}){
     return '';
     if(!className) className='object-cover'
     return( 
-            <img className={className} src={'http://localhost:4000/uploads/'+item.photos[index]} alt=""/>  
+            <img className={className} src={'https://campus-trade-server.onrender.com/uploads/'+item.photos[index]} alt=""/>  
     )
 }
 
