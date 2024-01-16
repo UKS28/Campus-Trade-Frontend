@@ -10,6 +10,7 @@ export function UserContextProvider({children}){
     const [ready,setReady]=useState(false);
     console.log(itemName,'from user context');
     useEffect(()=>{
+        console.log("inside usecontext",document.cookie)
       if(!user){
        axios.get('/profile')
        .then(({data})=>{
