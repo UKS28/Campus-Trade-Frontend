@@ -17,10 +17,14 @@ export default function IndexPage(){
             const {data}=await axios.post('/login',
             {
                 email,
-                password
+                password,
+                withCredentials: true
             });
-            
+            const { token, ...userData } = data;
+           
+            // console.log(token);
             setUser(data);
+            document.cookie =`token=${token}; SameSite=None; Secure; max-age=3600000 ;path=/`;
             alert("login successful");
             setRedirect(true);
         }
