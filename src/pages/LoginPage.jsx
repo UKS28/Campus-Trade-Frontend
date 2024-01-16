@@ -23,7 +23,7 @@ export default function IndexPage(){
             const { token, ...userData } = data;
            
             // console.log(token);
-            setUser(data);
+            setUser(userData.userDoc);
             document.cookie =`token=${token}; SameSite=None; Secure; max-age=3600000 ;path=/`;
             alert("login successful");
             setRedirect(true);
